@@ -1,20 +1,21 @@
 import React from 'react';
 import './globals.css';
 
-const Layout = ({ children }) => {
+export const metadata = {
+    title: 'TechVision - Software Solutions',
+    description: 'Innovative software solutions for your business',
+};
+
+interface LayoutProps {
+    children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
     return (
         <html lang="en">
             <body>
-                <header>
-                    <h1>Header</h1>
-                </header>
                 <main>{children}</main>
-                <footer>
-                    <p>Footer</p>
-                </footer>
             </body>
         </html>
     );
-};
-
-export default Layout;
+}
