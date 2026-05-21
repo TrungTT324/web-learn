@@ -6,11 +6,11 @@ const Layout = ({ children }) => {
         <html lang="en">
             <body>
                 <header>
-                    <h1>My Next.js App</h1>
+                    <h1>Header</h1>
                 </header>
                 <main>{children}</main>
                 <footer>
-                    <p>© 2023 My Next.js App</p>
+                    <p>Footer</p>
                 </footer>
             </body>
         </html>
